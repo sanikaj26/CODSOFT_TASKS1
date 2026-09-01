@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Load dataset
-df = pd.read_csv("dataset/sales_data.csv")
+df = pd.read_csv("sales_data.csv")
 
 print("----- ORIGINAL DATA -----")
 print(df.head())
@@ -51,6 +51,5 @@ print(df.duplicated(
 
 # Save cleaned dataset
 df.to_csv("cleaned_data.csv", index=False)
-
 print("\nCleaning completed successfully!")
 print("Saved as cleaned_data.csv")
